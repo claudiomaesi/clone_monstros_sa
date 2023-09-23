@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Disney+</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>    
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <p class="text--big">Usuário</p>
+                </li>
+                <li class="header__links__item">                    
+                    <a href="#">
+                        <img src="./dist/images/montros_sa/user.jpg" alt="foto usuário">
+                    </a>
+                </li>                
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/montros_sa/logo_monstros.png" alt="Monstros SA">
+            </div>           
+            <p class="text--sinopse">
+                A maior fábrica de monstros do mundo conta com James Sullivan, um dos monstros mais assustadores, que tem o pelo azul e chifres, além de seu assistente e melhor amigo Mike, um monstro verde de um olho só. Eles têm por missão assustar as crianças, que são consideradas tóxicas pelos monstros e cujo contato com eles seria catastrófico para seu mundo. Porém, ao visitar o mundo dos humanos a trabalho, Mike e Sully conhecem a garota Boo, que acaba sem querer indo parar no mundo dos monstros.
+            </p>            
+        </div>
+    </section>
+
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="trailer" class="title--small shows__tabs__button shows__tabs__button--is-active">
+                Assista ao Trailer
+            </button>
+            <button data-tab-button="extras" class="title--small shows__tabs__button">
+                Extras
+            </button>
+            <button data-tab-button="detalhes" class="title--small shows__tabs__button">
+                Detalhes
+            </button>
+        </nav>
+        <ul data-tab-id="trailer" class="shows__list shows__list--is-active">
+            <li class="shows__list__item shows__list__item__trailer">
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/iRh2kF-1X2E?si=nxUJXTm9YWGIBqID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </li>           
+        </ul>
+
+        <ul data-tab-id="extras" class="shows__list">
+            <li class="shows__list__item shows__list__item__extras">
+                <div>
+                    <a href="#">
+                        <img src="./dist/images/montros_sa/extras1.jpeg" alt="Extras">
+                        <p class="title--small">Monstros S.A. Clip</p>
+                    </a>                    
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./dist/images/montros_sa/extras2.jpeg" alt="Extras">
+                        <p class="title--small">Conceitos Banidos - Sulley</p>
+                    </a>                    
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./dist/images/montros_sa/extras3.jpeg" alt="Extras">
+                        <p class="title--small">Conceitos Banidos - Susto</p>
+                    </a> 
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./dist/images/montros_sa/extras4.jpeg" alt="Extras">
+                        <p class="title--small">Conceitos Banidos - Fim do dia</p>
+                    </a> 
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./dist/images/montros_sa/extras5.jpeg" alt="Extras">
+                        <p class="title--small">Conceitos Banidos - Gritos</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <ul data-tab-id="detalhes" class="shows__list shows__list__detalhe">            
+            <li>
+                <div class="shows__list__detalhes">
+                    <h2 class="title">MONSTROS S.A.</h2><br>
+                    <p class="text--detalhes">
+                        Sulley e seu falante assistente Mike trabalham na Monstros S.A., a maior fábrica de processamento de gritos de Monstrópolis. A principal fonte de energia do mundo dos monstros provém da coleta dos gritos das crianças humanas. Só que os monstros acreditam que as crianças são tóxicas e, quando uma menininha invade o mundo deles, começa a maior confusão.<br><br>
+                        Duração: 1h32min<br>
+                        Data de Lançamento: 2001<br>
+                        Gênero: Família, Comédia, Animação, Amizade<br>
+                        Classificação: livre<br>
+                        Direção: Pete Docter<br>
+                        Elenco: John Goodman, Billy Crystal, Mary Gibbs, Steve Buscemi<br>
+                    </p>
+                </div>                
+            </li>
+        </ul>
+    </section>
+
+    <section class="image-text-section">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="TV PC Tablet Celular">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Assista <i>Monstros S.A.</i> de qualquer dispositivo</h2>
+            <p class="text--detalhes">
+                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+            </p>
+        </div>
+    </section>   
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="imagem de um globo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Politica de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2023 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

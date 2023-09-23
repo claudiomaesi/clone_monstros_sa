@@ -1,0 +1,101 @@
+@use 'variaveis';
+
+.shows {
+    padding-left: 5.6vw;   
+
+    &__list {
+        padding-top: 44px;
+        display: none;
+        grid-template-columns: 1fr;
+        gap: 24px;              
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__detalhes {               
+            display: contents;                      
+            max-width: 900px;
+
+            @media (max-width: 768px) {
+                max-width: 768px;
+            }
+        }
+
+        &__item {           
+
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+            }     
+
+            &__extras {
+                display: flex;
+                justify-content: left;
+
+                @media (max-width: 768px) {
+                    display: block;                    
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                div {
+                    padding-right: 24px;
+                    margin-bottom: 24px;
+                }                
+            }
+
+            &__trailer {
+
+                @media (max-width: 768px) {                    
+                    iframe {
+                        width: calc(1120px / 3.3);
+                        height: calc(630px / 3.3);
+                    }    
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: left;
+        border-bottom: 3px solid gray;
+
+        @media (max-width: 768px) {
+            margin-right: 24px;
+        }
+        
+
+        @media (max-width:768px) {            
+            justify-content: space-between;
+            padding-left: auto;
+        }
+
+        &__button {
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            border: none;           
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+            
+
+            &--is-active {
+                border-bottom: 5px solid variaveis.$corTextoSecundario;
+            }
+
+            @media (max-width:768px) {
+                font-size: 16px;
+            }
+        }
+
+    }
+
+
+}
